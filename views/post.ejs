@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+
+<div class="container mt-4">
+    <h1 class="text-light"><%= post.title %></h1>
+    <p class="text-muted">by <%= post.author %> on <%= post.createdAt.toDateString() %></p>
+    
+    <div class="post-content text-light">
+        <p><%= post.body %></p>
+    </div>
+
+    <% if (user && user.id == post.authorId) { %>
+        <div class="d-flex justify-content-between mt-4">
+            <a href="/posts/<%= post._id %>/edit" class="btn btn-secondary">Edit</a>
+            <form action="/posts/<%= post._id %>?_method=DELETE" method="POST">
+                <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+        </div>
+    <% } %>
+</div>
+
+<%- include('partials/footer') %>

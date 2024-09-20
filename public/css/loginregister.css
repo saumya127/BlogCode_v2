@@ -1,0 +1,71 @@
+body {
+    background-color: #1E1E1E; /* Very Dark Gray */
+    color: #E0E0E0; /* Light Gray */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2C2C2C; /* Dark Gray */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444; /* Slightly lighter gray */
+    border-radius: 4px;
+    background-color: #3A3A3A; /* Darker Gray */
+    color: #E0E0E0; /* Light Gray */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007BFF; /* Bootstrap primary color */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF; /* Bootstrap primary color */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+.alert {
+    background-color: #FF4D4D; /* Red for error messages */
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+}

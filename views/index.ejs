@@ -1,0 +1,30 @@
+<%- include('partials/header', { title: 'Home' }) %>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to MyBlog</h1>
+        <p>Your space to share ideas, stories, and thoughts.</p>
+        <!-- <% if (!user) { %>
+            <a href="/register" class="btn">Get Started</a>
+            <a href="/login" class="btn btn-light">Login</a>
+        <% } else { %>
+            <a href="/dashboard" class="btn">Go to Dashboard</a>
+        <% } %> -->
+    </div>
+</section>
+
+<section class="posts">
+    <h2>Recent Posts</h2>
+    <div class="post-list">
+        <!-- <% posts.forEach(post => { %>
+            <div class="post">
+                <h3><a href="/posts/<%= post._id %>"><%= post.title %></a></h3>
+                <p class="post-meta">by <%= post.author %> on <%= post.createdAt.toDateString() %></p>
+                <p class="post-excerpt"><%= post.excerpt %>...</p>
+                <a href="/posts/<%= post._id %>" class="read-more">Read More</a>
+            </div>
+        <% }) %> -->
+    </div>
+</section>
+
+<%- include('partials/footer') %>
